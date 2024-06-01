@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="#F3EDC8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/dt_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="15dp"
+                android:layout_marginLeft="10dp"
+                android:padding="3dp"
+                android:layout_marginRight="230dp"
+                android:src="@drawable/back" />
+
+            <FrameLayout
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginVertical="15dp">
+
+                <ImageView
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/save"
+                    android:paddingBottom="10dp" />
+
+                <ImageView
+                    android:id="@+id/btn_saved"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/saved"
+                    android:visibility="gone"
+                    android:paddingBottom="10dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dt_img"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/dt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Title"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="#7D0A0A"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description : "
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="15dp"
+            android:textColor="#7D0A0A"/>
+
+        <TextView
+            android:id="@+id/ingridient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingridients : "
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:paddingHorizontal="15dp"
+            android:textColor="#7D0A0A"/>
+
+        <TextView
+            android:id="@+id/method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Method : "
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:paddingHorizontal="15dp"
+            android:textColor="#7D0A0A"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dt_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:text="No internet connection"
+            android:visibility="gone"
+            android:layout_marginTop="280dp"/>
+
+        <Button
+            android:id="@+id/dt_retry"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:text="Retry"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:backgroundTint="#BF3131"
+            android:textColor="#F3EDC8"/>
+
+    </LinearLayout>
+
+</ScrollView>
